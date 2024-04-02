@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Modules>
+    <Element>
+        <NameOfElement>CloseButton</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//button[@aria-label='Close']</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>DepartureAirports</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//button[@aria-label='Close']/parent::div/following-sibling::div/div[1]/div[1]/div[1]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>DepartureDateTime</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//button[@aria-label='Close']/parent::div/following-sibling::div/div[1]/div[1]/div[2]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>DeparturePrices</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//button[@aria-label='Close']/parent::div/following-sibling::div/div[1]/div[1]/div[3]</Value>
+        </ElementProperty>
+    </Element>
+
+    <Element>
+        <NameOfElement>ReturnAirports</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//button[@aria-label='Close']/parent::div/following-sibling::div/div[1]/div[2]/div[1]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>ReturnDateTime</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//button[@aria-label='Close']/parent::div/following-sibling::div/div[1]/div[2]/div[2]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>ReturnPrices</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//button[@aria-label='Close']/parent::div/following-sibling::div/div[1]/div[2]/div[3]</Value>
+        </ElementProperty>
+    </Element>
+
+    <Element>
+        <NameOfElement>TotalSection</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//button[@aria-label='Close']/parent::div/following-sibling::div/div[last()]</Value>
+        </ElementProperty>
+    </Element>
+</Modules>

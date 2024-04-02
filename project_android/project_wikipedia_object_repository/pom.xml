@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.nagarro.driven</groupId>
+    <artifactId>project_android</artifactId>
+    <version>${revision}</version>
+  </parent>
+  <artifactId>project_wikipedia_object_repository</artifactId>
+  <version>${revision}</version>
+  <name>project_wikipedia_object_repository</name>
+  <dependencies>
+    <dependency>
+      <groupId>com.nagarro.driven</groupId>
+      <artifactId>driven-core</artifactId>
+    </dependency>
+  </dependencies>
+</project>

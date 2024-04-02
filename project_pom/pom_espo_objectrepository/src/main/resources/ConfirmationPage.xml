@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Modules>
+    <Element>
+        <NameOfElement>ThankYouForBookingHeading</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//h1[contains(text(), 'Thank you for') and contains(text(), 'booking!')]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>GoToJourneyButton</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//span[contains(text(), 'Go to') and contains(text(), 'journey')]/parent::button</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>GoToFrontPageLink</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//div[contains(text(), 'Go to front') and contains(text(), 'page')]/parent::a</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>OutboundDayMonth</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//div[contains(text(), 'Outbound')]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>ReturnDayMonth</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//div[contains(text(), 'Return')]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>OutboundDepartureAirport</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>(//div[@data-qa='flight-airport-info'])[1]/div[1]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>OutboundReturnAirport</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>(//div[@data-qa='flight-airport-info'])[1]/div[last()]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>ReturnDepartureAirport</NameOfElement>ri
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>(//div[@data-qa='flight-airport-info'])[2]/div[1]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>ReturnReturnAirport</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>(//div[@data-qa='flight-airport-info'])[2]/div[last()]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>FirstTravellerName</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//div[text()='Travellers']/following-sibling::div[1]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>SecondTravellerName</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//div[text()='Travellers']/following-sibling::div[2]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>BookingReference</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//div[text()='Reference']//following-sibling::div</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>EmailAddress</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//div[text()='A confirmation is sent by email to']/div</Value>
+        </ElementProperty>
+    </Element>
+</Modules>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+  <Appenders>
+    <Console name="Console" target="SYSTEM_OUT">
+      <PatternLayout pattern="%d{HH:mm:ss.SSS} %-5level %logger{36} - %msg%n"/>
+    </Console>
+
+    <RollingFile fileName="${APP_LOG_ROOT}/A2A-Driven.log"
+      filePattern="${APP_LOG_ROOT}/A2A-Driven-%d{yyyy-MM-dd}.log"
+      name="fileLogger">
+      <!-- Except Error -->
+      <PatternLayout>
+        <pattern>%d{yyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n
+        </pattern>
+      </PatternLayout>
+      <Policies>
+        <TimeBasedTriggeringPolicy interval="1"
+          modulate="true"/>
+      </Policies>
+      <ThresholdFilter level="error" onMatch="DENY"
+        onMismatch="ACCEPT"/>
+    </RollingFile>
+    <RollingFile fileName="${APP_LOG_ROOT}/A2A-Driven-error.log"
+      filePattern="${APP_LOG_ROOT}/A2A-Driven-error-%d{yyyy-MM-dd}.log"
+      name="errorLogger">
+      <PatternLayout>
+        <pattern>%d{yyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n
+        </pattern>
+      </PatternLayout>
+      <Policies>
+        <TimeBasedTriggeringPolicy interval="1"
+          modulate="true"/>
+      </Policies>
+    </RollingFile>
+  </Appenders>
+  <Loggers>
+    <Logger name="org.apache.hc.client5.http" level="ERROR">
+      <AppenderRef ref="Console"/>
+    </Logger>
+    <Logger name="org.apache.hc.client5.http.wire" level="ERROR">
+      <AppenderRef ref="Console"/>
+    </Logger>
+    <Root level="TRACE">
+      <AppenderRef level="INFO" ref="Console"/>
+      <AppenderRef level="TRACE" ref="fileLogger"/>
+      <AppenderRef level="ERROR" ref="errorLogger"/>
+    </Root>
+  </Loggers>
+
+  <Properties>
+    <Property name="APP_LOG_ROOT">../../../logs</Property>
+  </Properties>
+</Configuration>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Modules>
+    <Element>
+        <NameOfElement>GreetingHeadingEnglish</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//div[contains(text(), 'Hi, where are you') and contains(text(), 'flying?')]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>GreetingHeadingNorwegian</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//div[contains(text(), 'Hei, hvor vil du') and contains(text(), 'fly?')]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>ConfigMenuButton</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//div[(text()='Menu') or (text()='Meny')]/parent::button</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>WhoIsFlyingButton</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//span[contains(., 'traveller')]/parent::button</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>FromField</NameOfElement>
+        <ElementProperty>
+            <Type>cssSelector</Type>
+            <Value>input[placeholder='Fly from']</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>FromFieldClearButton</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//input[@placeholder='Fly from']/parent::div/button</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>ToField</NameOfElement>
+        <ElementProperty>
+            <Type>cssSelector</Type>
+            <Value>input[placeholder='Fly to']</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>ToFieldClearButton</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//input[@placeholder='Fly to']/parent::div/button</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>DestButtonBergen</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//span[contains(text(), 'Bergen')]/ancestor::button</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>DestButtonTrondheim</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//span[contains(text(), 'Trondheim')]/ancestor::button</Value>
+        </ElementProperty>
+    </Element>
+
+
+    <Element>
+        <NameOfElement>DestinationSuggestionsDisplayed</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>(//div[@data-reach-popover])[2][@data-state='suggesting']</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>DestinationFirstElementSuggestionName</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>(//ul[@role='listbox'])[2]/li[1]/div/div[1]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>DestinationFirstElementSuggestionIATA</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>(//ul[@role='listbox'])[2]/li[1]/div/div[2]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>DestinationElementSuggestionNames</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>(//ul[@role='listbox'])[2]/li/div/div[1]</Value>
+        </ElementProperty>
+    </Element>
+
+    <Element>
+        <NameOfElement>DepartureSuggestionsDisplayed</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>(//div[@data-reach-popover])[1][@data-state='suggesting']</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>DepartureFirstElementSuggestionName</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>(//ul[@role='listbox'])[1]/li[1]/div/div[1]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>DepartureFirstElementSuggestionIATA</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>(//ul[@role='listbox'])[1]/li[1]/div/div[2]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>DepartureElementSuggestionNames</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>(//ul[@role='listbox'])[2]/li/div/div[1]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>FindMyBookingLink</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//span[contains(text(), 'My') and contains(text(), 'trips')]/parent::a</Value>
+        </ElementProperty>
+    </Element>
+</Modules>

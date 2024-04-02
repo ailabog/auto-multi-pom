@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Modules>
+    <Element>
+        <NameOfElement>ConfigMenuButton</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//div[(text()='Menu')]/parent::button</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>RoundTripButton</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//span[contains(text(), 'Round') and contains(text(), 'trip')]/ancestor::button</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>OneWayButton</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//span[contains(text(), 'One') and contains(text(), 'way')]/ancestor::button</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>WhoIsFlyingButton</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//span[(contains(text(), 'Round') and contains(text(), 'trip')) or (contains(text(), 'One') and contains(text(), 'way'))]/ancestor::button/preceding-sibling::button</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>WhoIsFlyingButtonNumberOfTravelers</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//span[(contains(text(), 'Round') and contains(text(), 'trip')) or (contains(text(), 'One') and contains(text(), 'way'))]/ancestor::button/preceding-sibling::button//span</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>DepartureField</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//input[@placeholder='Fly from']</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>DestinationField</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//input[@placeholder='Fly to']</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>ChooseOutbound</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//button/div[contains(text(), 'Choose') and contains(text(), 'outbound')]/parent::button</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>ChooseReturn</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//button/div[contains(text(), 'Choose') and contains(text(), 'return')]/parent::button</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>SwitchDepDestButton</NameOfElement>
+        <ElementProperty>
+            <Type>cssSelector</Type>
+            <Value>button[title=Switch]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>FirstAvailableDay</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>(//div[@aria-label='Low Fare Calendar']//button[not(@disabled)])[1]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>FirstAvailableDayNumber</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>(//div[@aria-label='Low Fare Calendar']//button[not(@disabled)])[1]/div[1]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>FirstAvailableDayPrice</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>(//div[@aria-label='Low Fare Calendar']//button[not(@disabled)])[1]/div[2]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>NextMonthWeekButton</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//button[contains(@aria-label, 'Show next')]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>MonthYearLabel</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//span[contains(text(), '20')]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>MonthViewButton</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//div[text()='Month']/parent::button</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>AllFlightsSelection</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//div[contains(text(), 'Select') and contains(text(), 'flight:')]/../..//button[@data-qa-available]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>AllAvailableFlightsSelection</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//div[contains(text(), 'Select') and contains(text(), 'flight:')]/../..//button[@data-qa-available='true']</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>FirstIndirectFlightSelection</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//div[contains(text(), 'connection')]/ancestor::button</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>FirstDepartureFlightSelection</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>((//div[contains(text(), 'Select') and contains(text(), 'flight:')])[1]/../..//button[@data-qa-available='true'])[1]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>FirstDepartureFlightSelectionType</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>((//div[contains(text(), 'Select') and contains(text(), 'flight:')])[1]/../..//button[@data-qa-available='true'])[1]//div[contains(text(), 'Mini') or contains(text(), 'Fleks') or contains(text(), 'Smart')]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>FirstReturnFlightSelection</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>((//div[contains(text(), 'Select') and contains(text(), 'flight:')])[2]/../..//button[@data-qa-available='true'])[1]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>FirstDepartureFlightSelectionDeparture</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>((//div[contains(text(), 'Select') and contains(text(), 'flight:')])[1]/../..//button[@data-qa-available='true'])[1]//div[@data-qa='flight-airport-info']/div[1]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>FirstReturnFlightSelectionDeparture</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>((//div[contains(text(), 'Select') and contains(text(), 'flight:')])[2]/../..//button[@data-qa-available='true'])[1]//div[@data-qa='flight-airport-info']/div[1]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>FirstDepartureFlightSelectionDestination</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>((//div[contains(text(), 'Select') and contains(text(), 'flight:')])[1]/../..//button[@data-qa-available='true'])[1]//div[@data-qa='flight-airport-info']/div[last()]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>FirstReturnFlightSelectionDestination</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>((//div[contains(text(), 'Select') and contains(text(), 'flight:')])[2]/../..//button[@data-qa-available='true'])[1]//div[@data-qa='flight-airport-info']/div[last()]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>FirstDepartureFlightSelectionPrice</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>(((//div[contains(text(), 'Select') and contains(text(), 'flight:')])[1]/../..//button[@data-qa-available='true'])[1]//div[contains(text(), 'Select') and contains(text(), 'from')]//parent::div)[1]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>FirstReturnFlightSelectionPrice</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>(((//div[contains(text(), 'Select') and contains(text(), 'flight:')])[2]/../..//button[@data-qa-available='true'])[1]//div[contains(text(), 'Select') and contains(text(), 'from')]//parent::div)[1]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>AllDepartureFlightsSelectionIntermediateAirports</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>(//div[contains(text(), 'Select') and contains(text(), 'flight:')])[1]/../..//button/div[1]/div[1]/div[1]/div[last()]/div[1]/div[1]/div[last()]/div[position()>1][position()&#60;last()]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>AllReturnFlightsSelectionIntermediateAirports</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>(//div[contains(text(), 'Select') and contains(text(), 'flight:')])[2]/../..//button/div[1]/div[1]/div[1]/div[last()]/div[1]/div[1]/div[last()]/div[position()>1][position()&#60;last()]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>AllDepartureFlightsTypesLabels</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>(//div[contains(text(), 'Select') and contains(text(), 'flight:')])[1]/../..//button//div[contains(text(), 'Direct') or contains(text(), 'connection')]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>AllReturnFlightsTypesLabels</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>(//div[contains(text(), 'Select') and contains(text(), 'flight:')])[2]/../..//button//div[contains(text(), 'Direct') or contains(text(), 'connection')]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>AllDepartureFlightsPriceButtons</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>(//div[contains(text(), 'Select') and contains(text(), 'flight:')])[1]/../..//button//div[contains(text(), 'Select')]/parent::div</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>AllReturnFlightsPriceButtons</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>(//div[contains(text(), 'Select') and contains(text(), 'flight:')])[2]/../..//button//div[contains(text(), 'Select')]/parent::div</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>AllDepartureFlightsDurations</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>(//div[contains(text(), 'Select') and contains(text(), 'flight:')])[1]/../..//button//div[contains(text(), 'Direct') or contains(text(), 'connection')]/parent::div/div[last()]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>AllReturnFlightsDurations</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>(//div[contains(text(), 'Select') and contains(text(), 'flight:')])[2]/../..//button//div[contains(text(), 'Direct') or contains(text(), 'connection')]/parent::div/div[last()]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>AllDepartureFlightsDepDestTimes</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>(//div[contains(text(), 'Select') and contains(text(), 'flight:')])[1]/../..//button/div[1]/div[1]/div[1]/div[last()]/div[1]/div[1]/div[1]/div</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>AllReturnFlightsDepDestTimes</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>(//div[contains(text(), 'Select') and contains(text(), 'flight:')])[2]/../..//button/div[1]/div[1]/div[1]/div[last()]/div[1]/div[1]/div[1]/div</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>OnlyDirectFlights</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//div[contains(text(), 'Direct') and contains(text(), 'only')]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>OnlyDirectCheckbox</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//div[contains(text(), 'Direct') and contains(text(), 'only')]/preceding-sibling::input</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>ContinueButton</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//span[text()='Continue']/parent::button</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>SelectYourFlightModalHeading</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//div[contains(text(), 'Select ticket') and contains(text(), 'type')]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>ModalSelectionMini</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//button[contains(@aria-label, 'Select Mini')]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>ModalSelectionMiniPrice</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//div[text()='Mini']/ancestor::span//div[contains(text(), 'adult') and contains(text(), 'per')]//following-sibling::div</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>ModalSelectionFleks</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//button[contains(@aria-label, 'Select Fleks')]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>ModalSelectionFleksPrice</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//div[text()='Fleks']/ancestor::span//div[contains(text(), 'adult') and contains(text(), 'per')]//following-sibling::div</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>ModalSelectionSmart</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//button[contains(@aria-label, 'Select Smart')]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>ModalSelectionSmartPrice</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//div[text()='Smart']/ancestor::span//div[contains(text(), 'adult') and contains(text(), 'per')]//following-sibling::div</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>ModalSelectionPrices</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//div[contains(text(), 'adult') and contains(text(), 'per')]/following-sibling::div</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>ModalSelectionCloseButton</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>(//button[@aria-label='Close'])[2]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>PriceDetails</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//div[contains(text(), 'Price') and contains(text(), 'details')]</Value>
+        </ElementProperty>
+    </Element>
+</Modules>

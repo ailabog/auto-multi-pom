@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Modules>
+    <Element>
+        <NameOfElement>ContinueWithoutProfileButton</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//span[contains(text(), 'Continue without profile')]/parent::button</Value>
+        </ElementProperty>
+    </Element>
+</Modules>

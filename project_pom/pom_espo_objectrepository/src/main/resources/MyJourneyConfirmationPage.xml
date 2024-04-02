@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Modules>
+    <Element>
+        <NameOfElement>CheckInMessage</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//div[contains(text(), 'Check in')]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>CheckInLink</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//div[contains(text(), 'Check in')]/ancestor::a</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>HeaderFrom</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//h1[contains(text(), 'to')]/preceding-sibling::div</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>HeaderTo</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//h1[contains(text(), 'to')]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>NumberOfPassengers</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//h1[contains(text(), 'to')]/../../div[2]/div/div</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>FlightType</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//h1[contains(text(), 'to')]/../../div[2]/div[2]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>FlightDates</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//h1[contains(text(), 'to')]/../../div[2]/div[3]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>BookingReference</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//div[text()='Reference']//following-sibling::div</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>OutboundAirports</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//h2[contains(text(), 'Outbound')]/../../div[2]/div[1]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>ReturnAirports</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//h2[contains(text(), 'Return')]/../../div[2]/div[1]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>PassengersLink</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//h2[text()='Passengers']</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>PassengersInitials</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//h2[text()='Passengers']/../div</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>AskForAssistanceButton</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//div[contains(text(), 'Ask for assistance on your') and contains(text(), 'journey')]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>ChangeDateAndTimeButton</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//div[contains(text(), 'Change time and') and contains(text(), 'date')]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>CancelJourneyButton</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//div[contains(text(), 'Cancel') and contains(text(), 'journey')]</Value>
+        </ElementProperty>
+    </Element>
+
+    <Element>
+        <NameOfElement>CancelJourneyModalContinueButton</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//div[text()='Continue']</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>SignInWithVippsButton</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//button[text()='Sign in with Vipps']</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>LogInTitle</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//h1[text()='Log in']</Value>
+        </ElementProperty>
+    </Element>
+
+    <Element>
+        <NameOfElement>DownloadReceiptButton</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//div[contains(text(), 'Download') and contains(text(), 'receipt')]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>SendBookingConfirmationButton</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//div[contains(text(), 'Send booking') and contains(text(), 'confirmation')]</Value>
+        </ElementProperty>
+    </Element>
+</Modules>

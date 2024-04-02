@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Modules>
+    <Element>
+        <NameOfElement>ReferenceInput</NameOfElement>
+        <ElementProperty>
+            <Type>cssSelector</Type>
+            <Value>input[name='bookingReference']</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>LastNameInput</NameOfElement>
+        <ElementProperty>
+            <Type>cssSelector</Type>
+            <Value>input[name='lastName']</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>FindBookingButton</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//span[contains(text(), 'Find') and contains(text(), 'booking')]/parent::button</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>NoBookingFoundErrorMessage</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//div[contains(text(), 'We can’t find any booking with this reference and name.')]</Value>
+        </ElementProperty>
+    </Element>
+</Modules>

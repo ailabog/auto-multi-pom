@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.nagarro.driven</groupId>
+		<artifactId>project_android</artifactId>
+		<version>${revision}</version>
+	</parent>
+	<artifactId>project_wikipedia_tests</artifactId>
+	<version>${revision}</version>
+	<name>project_wikipedia_tests</name>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>com.squareup.okhttp3</groupId>
+			<artifactId>okhttp</artifactId>
+			<version>4.9.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjweaver</artifactId>
+			<version>1.9.6</version>
+		</dependency>
+		<dependency>
+			<groupId>com.nagarro.driven</groupId>
+			<artifactId>testng-runner</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.nagarro.driven</groupId>
+			<artifactId>extent-reporter</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.nagarro.driven</groupId>
+			<artifactId>client-appium</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.nagarro.driven</groupId>
+			<artifactId>project_wikipedia_page_objects</artifactId>
+			<version>${revision}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.nagarro.driven</groupId>
+			<artifactId>project_wikipedia_data</artifactId>
+			<version>${revision}</version>
+		</dependency>
+	</dependencies>
+</project>

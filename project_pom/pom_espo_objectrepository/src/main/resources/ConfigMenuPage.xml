@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Modules>
+    <Element>
+        <NameOfElement>ExitConfigMenuButton</NameOfElement>
+        <ElementProperty>
+            <Type>cssSelector</Type>
+            <Value>div[data-focus-lock-disabled='false'] button[aria-label='Close menu'] svg</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>CurrencyButtonNOK</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//div[text()='NOK']/parent::button</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>CurrencyButtonEUR</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//div[text()='EUR']/parent::button</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>LanguageButtonEnglish</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//div[text()='English']/parent::a</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>LanguageButtonNorwegian</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//div[text()='Norsk']/parent::a</Value>
+        </ElementProperty>
+    </Element>
+</Modules>

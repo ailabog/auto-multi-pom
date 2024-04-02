@@ -1,0 +1,7 @@
+TestMethodName,Username,Password
+verifyLogin,shilpa861,automation
+invalidCredentialsLogin,shilpa861,automa
+,Search Data,
+verifySearchResult,appium,
+addBookmarkTest,appium,
+removeBookmarkTest,appium,

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Modules>
+    <Element>
+        <NameOfElement>Seat7A</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//div[text()='7']//following-sibling::div[1]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>ContinueButton</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//span[contains(text(), 'Continue')]/..</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>SkipButton</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//span[contains(text(), 'Skip')]/..</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>GoBackButton</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//button[text() = 'Go back']</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>SeatLoader</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//div[@data-qa='loading']</Value>
+        </ElementProperty>
+    </Element>
+</Modules>

@@ -1,0 +1,12 @@
+testDirectFlightsSelection,Bergen,Trondheim
+testDirectFlightsSelection,Oslo,Bergen
+testFlightResultsElements,Trondheim,TrondheimTRD
+testFlightResultsElements,Bergen,BergenBGO
+testChooseOneWayOrReturn,Oslo (OSL),Bergen (BGO)
+testCalendarDisplaysLowestFares,Bergen
+testCalendarDisplaysLowestFares,Trondheim
+testSelectNumberOfAdultsChildrenInfantsTraveling,Bergen,2,1,2
+testSelectNumberOfAdultsChildrenInfantsTraveling,Trondheim,3,3,1
+testSelectNumberOfAdultsChildrenInfantsTraveling,Bergen,5,0,0
+testChooseBetweenThreeDifferentProducts,Bergen,2,3,1
+testChangeOriginDestination,Trondheim,Oslo,Bergen

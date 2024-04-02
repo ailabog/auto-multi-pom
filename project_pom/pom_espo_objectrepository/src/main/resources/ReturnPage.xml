@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Modules>
+    <Element>
+        <NameOfElement>AddToCalendar</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//a[contains(text(), 'Add to calendar')]</Value>
+        </ElementProperty>
+    </Element>
+
+    <Element>
+        <NameOfElement>OutboundDayMonth</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//h2[contains(text(), 'Outbound')]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>ReturnDayMonth</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//div[contains(text(), 'Return')]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>OutboundDepartureAirport</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>(//div[@data-qa='flight-airport-info'])[1]/div[1]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>OutboundReturnAirport</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>(//div[@data-qa='flight-airport-info'])[1]/div[last()]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>ReturnDepartureAirport</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>(//div[@data-qa='flight-airport-info'])[2]/div[1]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>ReturnReturnAirport</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>(//div[@data-qa='flight-airport-info'])[2]/div[last()]</Value>
+        </ElementProperty>
+    </Element>
+
+    <Element>
+        <NameOfElement>BookingReference</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//div[text()='Reference']//following-sibling::div</Value>
+        </ElementProperty>
+    </Element>
+
+    <Element>
+    <NameOfElement>BookingReference</NameOfElement>
+    <ElementProperty>
+        <Type>xpath</Type>
+        <Value>//div[text()='Reference']//following-sibling::div</Value>
+    </ElementProperty>
+    </Element>
+
+    <Element>
+        <NameOfElement>HandLugageSeat</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//div[contains(text(), 'Hand luggage')]</Value>
+        </ElementProperty>
+    </Element>
+
+</Modules>

@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<project
+        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+        xmlns="http://maven.apache.org/POM/4.0.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.nagarro.driven</groupId>
+        <artifactId>runner-parent</artifactId>
+        <version>${revision}</version>
+    </parent>
+    <artifactId>cucumberTestng-runner</artifactId>
+    <name>DRIVEN-Runner-cucumberTestng</name>
+    <version>${revision}</version>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.nagarro.driven</groupId>
+            <artifactId>testng-runner</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-testng</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>junit</groupId>
+                    <artifactId>junit</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>net.masterthought</groupId>
+            <artifactId>cucumber-reporting</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.nagarro.driven</groupId>
+            <artifactId>extent-reporter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-guice</artifactId>
+        </dependency>
+        <!--<dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-java</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-jvm-deps</artifactId>
+        </dependency>-->
+    </dependencies>
+</project>

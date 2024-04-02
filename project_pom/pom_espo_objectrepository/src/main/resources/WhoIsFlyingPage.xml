@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Modules>
+    <Element>
+        <NameOfElement>AutofillWithPassengerButton</NameOfElement>
+        <ElementProperty>
+            <Type>cssSelector</Type>
+            <Value>button[aria-label^='Autofill with passenger']</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>Adult1FirstName</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//h3[contains(., 'Adult 1')]/../..//input[@placeholder='First name']</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>Adult1LastName</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//h3[contains(., 'Adult 1')]/../..//input[@placeholder='Last name']</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>Adult1SexRadioButtonMale</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//h3[contains(., 'Adult 1')]/../..//input[@value='Male']/..</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>Adult1SexRadioButtonFemale</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//h3[contains(., 'Adult 1')]/../..//input[@value='Female']/..</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>Adult2FirstName</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//h3[contains(., 'Adult 2')]/../..//input[@placeholder='First name']</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>Adult2LastName</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//h3[contains(., 'Adult 2')]/../..//input[@placeholder='Last name']</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>Adult2SexRadioButtonMale</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//h3[contains(., 'Adult 2')]/../..//input[@value='Male']/..</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>Adult2SexRadioButtonFemale</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//h3[contains(., 'Adult 2')]/../..//input[@value='Female']/..</Value>
+        </ElementProperty>
+    </Element>
+
+
+
+
+    <Element>
+        <NameOfElement>Child1FirstName</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//h3[contains(., 'Child 1')]/../..//input[@placeholder='First name']</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>Child1LastName</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//h3[contains(., 'Child 1')]/../..//input[@placeholder='Last name']</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>Child1SexRadioButtonMale</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//h3[contains(., 'Child 1')]/../..//input[@value='Male']/..</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>Child1SexRadioButtonFemale</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//h3[contains(., 'Child 1')]/../..//input[@value='Female']/..</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>Child1Birthday</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//h3[contains(., 'Child 1')]/../..//input[@type='date']</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>Child1ErrorMessageTooOld</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//h3[contains(., 'Child 1')]/../..//div[contains(text(), 'Passengers 16 years or older should be booked as') and contains(text(), 'adults')]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>Child1ErrorMessageNameRequired</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//h3[contains(., 'Child 1')]/../..//div[contains(text(), 'This is') and contains(text(), 'required')]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>Child2FirstName</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//h3[contains(., 'Child 2')]/../..//input[@placeholder='First name']</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>Child2LastName</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//h3[contains(., 'Child 2')]/../..//input[@placeholder='Last name']</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>Child2SexRadioButtonMale</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//h3[contains(., 'Child 2')]/../..//input[@value='Male']/..</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>Child2SexRadioButtonFemale</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//h3[contains(., 'Child 2')]/../..//input[@value='Female']/..</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>Child2Birthday</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//h3[contains(., 'Child 2')]/../..//input[@type='date']</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>Child2ErrorMessageTooOld</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//h3[contains(., 'Child 2')]/../..//div[contains(text(), 'Passengers 16 years or older should be booked as') and contains(text(), 'adults')]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>Child2ErrorMessageNameRequired</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//h3[contains(., 'Child 2')]/../..//div[contains(text(), 'This is') and contains(text(), 'required')]</Value>
+        </ElementProperty>
+    </Element>
+
+
+
+    <Element>
+        <NameOfElement>Infant1FirstName</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//h3[contains(., 'Infant 1')]/../..//input[@placeholder='First name']</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>Infant1LastName</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//h3[contains(., 'Infant 1')]/../..//input[@placeholder='Last name']</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>Infant1SexRadioButtonMale</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//h3[contains(., 'Infant 1')]/../..//input[@value='Male']/..</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>Infant1SexRadioButtonFemale</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//h3[contains(., 'Infant')]/../..//input[@value='Female']/..</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>Infant1Birthday</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//h3[contains(., 'Infant')]/../..//input[@type='date']</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>Infant1ErrorMessageTooOldAdult</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//h3[contains(., 'Infant 1')]/../..//div[contains(text(), 'Passengers 16 years or older should be booked as') and contains(text(), 'adults')]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>Infant1ErrorMessageTooOldChild</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//h3[contains(., 'Infant 1')]/../..//div[contains(text(), 'Passengers 2 - 15 years old should be booked as') and contains(text(), 'children')]</Value>
+        </ElementProperty>
+    </Element>
+
+    <Element>
+        <NameOfElement>Child2ErrorMessageNameRequired</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//h3[contains(., 'Child 2')]/../..//div[contains(text(), 'This is') and contains(text(), 'required')]</Value>
+        </ElementProperty>
+    </Element>
+
+
+
+
+    <Element>
+        <NameOfElement>ContinueButton</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//span[text()='Continue']/parent::button</Value>
+        </ElementProperty>
+    </Element>
+</Modules>

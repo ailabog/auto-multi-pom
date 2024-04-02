@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<project
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.nagarro.driven</groupId>
+    <artifactId>project_pom</artifactId>
+    <version>${revision}</version>
+  </parent>
+  <artifactId>pom_espo_pageobjects</artifactId>
+  <name>A2A-DRIVEN-Project POM-Page Objects</name>
+  <version>${revision}</version>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.nagarro.driven</groupId>
+      <artifactId>pom_espo_objectrepository</artifactId>
+      <version>${revision}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-slf4j-impl</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-api</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-core</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.nagarro.driven</groupId>
+      <artifactId>client-selenium</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.nagarro.driven</groupId>
+      <artifactId>client-ui-api</artifactId>
+    </dependency>
+  </dependencies>
+</project>

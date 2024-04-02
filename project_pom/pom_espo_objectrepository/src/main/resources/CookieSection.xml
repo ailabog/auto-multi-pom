@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Modules>
+    <Element>
+        <NameOfElement>AcceptAllCookiesButton</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//span[contains(text(), 'Accept')]/ancestor::button</Value>
+        </ElementProperty>
+    </Element>
+</Modules>

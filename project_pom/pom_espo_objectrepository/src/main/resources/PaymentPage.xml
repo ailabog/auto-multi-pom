@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Modules>
+    <Element>
+        <NameOfElement>CreditCardNumber</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//input[@id='encryptedCardNumber']</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>ExpiryDate</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//input[@id='encryptedExpiryDate']</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>SecurityCode</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//input[@id='encryptedSecurityCode']</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>NameOnCard</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//span[text()='Name on card']/parent::label//input</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>PayButton</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//span[@class='adyen-checkout__button__text']/ancestor::button</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>PurchaseConditionsRadioButton</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//input[@aria-label='Purchase conditions']/parent::label/div[1]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>PurchaseConditionsLink</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//input[@aria-label='Purchase conditions']/parent::label/div[2]/a</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>PurchaseConditionsErrorMessage</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//div[contains(text(), 'You have to accept our purchase conditions before completing your') and contains(text(), 'order')]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>CardNumberIncompleteFieldErrorMessage</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//div[contains(@class, 'adyen-checkout__field--cardNumber')]//span[text()='Incomplete field']</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>CardNumberInvalidFieldErrorMessage</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//div[contains(@class, 'adyen-checkout__field--cardNumber')]//span[text()='Invalid card number']</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>SecurityCodeIncompleteFieldErrorMessage</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//div[contains(@class, 'adyen-checkout__field--securityCode')]//span[text()='Incomplete field']</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>PaymentRefusedErrorMessage</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//span[text()='The payment was refused. Please verify that the card details you provided are correct, or try again with a different payment form.']</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>RetryButton</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//span[text()='Retry']/parent::button</Value>
+        </ElementProperty>
+    </Element>
+</Modules>

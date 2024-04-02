@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Modules>
+    <Element>
+        <NameOfElement>FlyrLogoLink</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//img[@alt='Flyr logo']/parent::a</Value>
+        </ElementProperty>
+    </Element>
+</Modules>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Modules>
+    <Element>
+        <NameOfElement>Email</NameOfElement>
+        <ElementProperty>
+            <Type>cssSelector</Type>
+            <Value>input[placeholder='Email']</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>PhoneNumber</NameOfElement>
+        <ElementProperty>
+            <Type>cssSelector</Type>
+            <Value>input[placeholder='Phone number']</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>InvalidEmailAddressErrorMessage</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//div[contains(text(), 'Enter a valid email') and contains(text(), 'address')]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>EmailAddressMissingErrorMessage</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//div[@class='PhoneInput']/preceding-sibling::div//div[contains(text(), 'This is') and contains(text(), 'required')]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>InvalidPhoneNumberErrorMessage</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//div[contains(text(), 'Enter a valid phone') and contains(text(), 'number')]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>PhoneNumberMissingErrorMessage</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//div[@class='PhoneInput']/following-sibling::div/div[contains(text(), 'This is') and contains(text(), 'required')]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>ContinueButton</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//span[text()='Continue']/..</Value>
+        </ElementProperty>
+    </Element>
+</Modules>

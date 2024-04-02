@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<project
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://maven.apache.org/POM/4.0.0"
+        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>client-parent</artifactId>
+        <groupId>com.nagarro.driven</groupId>
+        <version>${revision}</version>
+    </parent>
+    <name>DRIVEN-Client-appium</name>
+    <version>${revision}</version>
+    <artifactId>client-appium</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.nagarro.driven</groupId>
+            <artifactId>driven-core</artifactId>
+        </dependency>
+        <dependency>
+            <artifactId>java-client</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.seleniumhq.selenium</groupId>
+                    <artifactId>selenium-remote-driver</artifactId>
+                </exclusion>
+            </exclusions>
+            <groupId>io.appium</groupId>
+        </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-remote-driver</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.nagarro.driven</groupId>
+            <artifactId>client-ui-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.selendroid</groupId>
+            <artifactId>selendroid-server-common</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.nagarro.driven</groupId>
+            <artifactId>extent-reporter</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>

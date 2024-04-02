@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Modules>
+    <Element>
+        <NameOfElement>DepartureAirport</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//h1/following-sibling::div[1]/div[1]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>DestinationAirport</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//h1/following-sibling::div[1]/div[2]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>DatesDepartureReturn</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//h1/following-sibling::div[2]/div[last()]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>ProceedToPaymentButton</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>//span[contains(text(), 'Proceed to')][contains(text(), 'payment')]/parent::button</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>SelectedSeatsLabelDeparture</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>(//div[contains(text(), 'Seat') and contains(text(), 'selection')]/following-sibling::div)[1]</Value>
+        </ElementProperty>
+    </Element>
+    <Element>
+        <NameOfElement>SelectedSeatsLabelReturn</NameOfElement>
+        <ElementProperty>
+            <Type>xpath</Type>
+            <Value>(//div[contains(text(), 'Seat') and contains(text(), 'selection')]/following-sibling::div)[2]</Value>
+        </ElementProperty>
+    </Element>
+</Modules>
